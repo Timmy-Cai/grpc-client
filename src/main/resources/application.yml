@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: grpc-client
+server:
+  port: 8081
+grpc:
+  client:
+    grpc-server:
+      address: 'static://127.0.0.1:9090' #static表示静态IP
+      negotiationType: plaintext  #plaintext表示静态文本
